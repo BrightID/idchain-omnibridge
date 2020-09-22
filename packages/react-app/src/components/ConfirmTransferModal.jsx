@@ -32,9 +32,9 @@ export const ConfirmTransferModal = ({ isOpen, onClose }) => {
   const isxDai = isxDaiChain(fromToken.chainId);
   const fromAmt = `${formatValue(fromAmount, fromToken.decimals)} ${
     fromToken.symbol
-  }${isxDai ? ' on xDai' : ''}`;
+  }${isxDai ? ' on IDChain' : ''}`;
   const toAmt = `${formatValue(toAmount, toToken.decimals)} ${toToken.symbol}${
-    isxDai ? '' : ' on xDai'
+    isxDai ? '' : ' on IDChain'
   }`;
 
   const onClick = () => {

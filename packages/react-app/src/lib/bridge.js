@@ -64,7 +64,7 @@ export const fetchToToken = async (fromToken, account) => {
   const toChainId = getBridgeNetwork(fromToken.chainId);
   const isxDai = isxDaiChain(toChainId);
   return {
-    name: isxDai ? `${fromToken.name} on xDai` : fromToken.name.slice(0, -8),
+    name: isxDai ? `${fromToken.name} on IDChain` : fromToken.name.slice(0, -8),
     address: toTokenAddress,
     symbol: fromToken.symbol,
     decimals: fromToken.decimals,
