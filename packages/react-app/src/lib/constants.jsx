@@ -7,72 +7,29 @@ export const ADDRESS_ZERO = '0x0000000000000000000000000000000000000000';
 
 export const networkOptions = [
   {
-    value: 100,
+    value: 74,
     key: 0,
     bridge: { chainId: 1, name: 'ETH Mainnet' },
-    label: 'xDai',
-    name: 'xDai Chain',
-    icon: <NetworkIcon />,
-  },
-  {
-    value: 1,
-    key: 1,
-    bridge: { chainId: 100, name: 'xDai Chain' },
-    label: 'Mainnet',
-    name: 'ETH Mainnet',
-    icon: <NetworkIcon />,
-  },
-  {
-    value: 77,
-    key: 2,
-    bridge: { chainId: 42, name: 'Kovan Testnet' },
-    label: 'Sokol',
-    name: 'Sokol Testnet',
-    icon: <NetworkIcon />,
-  },
-  {
-    value: 42,
-    key: 3,
-    bridge: { chainId: 77, name: 'Sokol Testnet' },
-    label: 'Kovan',
-    name: 'Kovan Testnet',
-    icon: <NetworkIcon />,
-  },
-
-  {
-    value: 74,
-    key: 4,
-    bridge: { chainId: 4, name: 'Rinkeby' },
     label: 'IDChain',
     name: 'IDChain',
     icon: <NetworkIcon />,
   },
   {
-    value: 4,
-    key: 5,
+    value: 1,
+    key: 1,
     bridge: { chainId: 74, name: 'IDChain' },
-    label: 'Rinkeby',
-    name: 'Rinkeby Testnet',
+    label: 'Mainnet',
+    name: 'ETH Mainnet',
     icon: <NetworkIcon />,
   },
 ];
 
 export const networkNames = {
-  100: 'xDai Chain',
-  1: 'ETH Mainnet',
-  77: 'Sokol Testnet',
   74: 'IDChain',
-  4: 'Rinkeby Testnet',
-  42: 'Kovan Testnet',
+  1: 'ETH Mainnet'
 };
 
 export const chainUrls = {
-  100: {
-    rpc: 'https://xdai.poanetwork.dev',
-    explorer: 'https://blockscout.com/poa/xdai',
-    chainId: 100,
-    name: 'xDai Chain',
-  },
   74: {
     rpc: 'https://idchain.one/rpc/',
     explorer: 'https://explorer.idchain.one/',
@@ -85,33 +42,15 @@ export const chainUrls = {
     chainId: 1,
     name: 'ETH Mainnet',
   },
-  77: {
-    rpc: 'https://sokol.poa.network',
-    explorer: 'https://blockscout.com/poa/sokol',
-    chainId: 77,
-    name: 'Sokol Testnet',
-  },
-  42: {
-    rpc: `https://kovan.infura.io/v3/${CONFIG.infuraId}`,
-    explorer: 'https://kovan.etherscan.io',
-    chainId: 42,
-    name: 'Kovan Testnet',
-  },
-  4: {
-    rpc: `https://rinkeby.infura.io/v3/${CONFIG.infuraId}`,
-    explorer: 'https://rinkeby.etherscan.io',
-    chainId: 4,
-    name: 'Rinkeby Testnet',
-  },
 };
 
 export const defaultTokens = {
-  100: {
-    name: 'Stake on xDai',
-    address: '0xb7D311E2Eb55F2f68a9440da38e7989210b9A05e',
-    symbol: 'STAKE',
+  74: {
+    name: 'Wrapped EIDI',
+    address: '0x5B160edBa6119828c5B065804e86111921323f9c',
+    symbol: 'WEIDI',
     decimals: 18,
-    chainId: 100,
+    chainId: 74,
   },
   1: {
     name: 'Stake',
@@ -121,69 +60,25 @@ export const defaultTokens = {
     chainId: 1,
     logoURI:
       'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0Ae055097C6d159879521C384F1D2123D1f195e6/logo.png',
-  },
-  77: {
-    name: 'FaucetToken on xDai',
-    address: '0x1b457c787792d17bea8d41885ada00e764712cdd',
-    symbol: 'FAU',
-    decimals: 18,
-    chainId: 77,
-  },
-  42: {
-    name: 'FaucetToken',
-    address: '0xfab46e002bbf0b4509813474841e0716e6730136',
-    symbol: 'FAU',
-    decimals: 18,
-    chainId: 42,
-  },
-  4: {
-    name: '0x Project',
-    address: '0xddea378a6ddc8afec82c36e9b0078826bf9e68b6',
-    symbol: 'ZRX',
-    decimals: 18,
-    chainId: 4,
-  },
-  74: {
-    name: 'Wrapped EIDI',
-    address: '0x5B160edBa6119828c5B065804e86111921323f9c',
-    symbol: 'WEIDI',
-    decimals: 18,
-    chainId: 74,
-  },
+  }
 };
 
 export const graphEndpoints = {
   74: 'https://subgraph.idchain.daohaus.club/subgraphs/name/idchain-omnibridge',
-  100: 'https://api.thegraph.com/subgraphs/name/dan13ram/xdai-omnibridge',
-  1: 'https://api.thegraph.com/subgraphs/name/dan13ram/mainnet-omnibridge',
-  77: 'https://api.thegraph.com/subgraphs/name/dan13ram/sokol-omnibridge',
-  42: 'https://api.thegraph.com/subgraphs/name/dan13ram/kovan-omnibridge',
-  4: 'https://thegraph.com/explorer/subgraph/crisog/omnibridge-rinkeby'
+  1: 'https://api.thegraph.com/subgraphs/name/dan13ram/mainnet-omnibridge'
 };
 
 export const mediators = {
-  74: '0x9Db946C186d87cf381bC532411A9bE6C57197Ab9',
-  4: '0xE2b217cfe15B36B6A9bb340b0190cf07C87f95Fe',
-  42: '0xA960d095470f7509955d5402e36d9DB984B5C8E2',
-  77: '0x40CdfF886715A4012fAD0219D15C98bB149AeF0e',
-  1: '0x88ad09518695c6c3712AC10a214bE5109a655671',
-  100: '0x6d13E97F4573B0caDC695B97f8365C35940C35d4',
+  74: '0x920D59E4F79478D8A188b6736333535c765d50cd',
+  1: '0xc47192E48F75B612c792833C8b54Ad6BE319af90',
 };
 
 export const ambs = {
-  42: '0xFe446bEF1DbF7AFE24E81e05BC8B271C1BA9a560',
-  77: '0xFe446bEF1DbF7AFE24E81e05BC8B271C1BA9a560',
-  1: '0x4C36d2919e407f0Cc2Ee3c993ccF8ac26d9CE64e',
-  74: '0xA38D3420b67180fEDb0b4b365C45954004Be11f3',
-  4: '0x585B9060FA547b11ebE6C710DcaAb5Ad63ACf512',
-  100: '0x1B2CBAb750ace0FFD9874F015aD4e751CEe8BfEe',
+  74: '0x98e4b879f07c1BEac8592216c903fb33e828C214',
+  1: '0x33d136C1501709Ee020D7A8CA56D44DAcb15e227',
 };
 
 export const defaultTokensUrl = {
-  100: 'https://raw.githubusercontent.com/1Hive/default-token-list/master/uniswap-xdai.tokenlist.json',
   74: 'https://raw.githubusercontent.com/1Hive/default-token-list/master/uniswap-xdai.tokenlist.json',
   1: 'https://raw.githubusercontent.com/raid-guild/default-token-list/master/src/tokens/mainnet.json',
-  4: 'https://github.com/crisog/idchain-omnibridge/blob/master/packages/token-list/rinkeby.json',
-  42: 'https://raw.githubusercontent.com/raid-guild/default-token-list/master/src/tokens/kovan.json',
-  77: 'https://raw.githubusercontent.com/raid-guild/default-token-list/master/src/tokens/sokol.json',
 };
