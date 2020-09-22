@@ -64,8 +64,8 @@ export const defaultTokens = {
 };
 
 export const graphEndpoints = {
-  74: 'https://subgraph.idchain.daohaus.club/subgraphs/name/idchain-omnibridge',
-  1: 'https://api.thegraph.com/subgraphs/name/dan13ram/mainnet-omnibridge'
+  74: 'https://subgraph.idchain.daohaus.club/subgraphs/name/omnibridge-idchain',
+  1: 'https://api.thegraph.com/subgraphs/name/crisog/idchain-omnibridge'
 };
 
 export const mediators = {
