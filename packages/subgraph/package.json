@@ -12,8 +12,7 @@
     "prepare-idchain": "mustache config/idchain.json subgraph.template.yaml > subgraph.yaml",
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create-mainnet": "graph create --node http://localhost:8020/ idchain-omnibridge-mainnet",
-    "deploy-mainnet": "graph deploy idchain-omnibridge-mainnet --ipfs http://localhost:5001 --node http://localhost:8020/",
+    "deploy-mainnet": "graph deploy idchain-omnibridge --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "create-idchain": "graph create --node http://localhost:8020/ idchain-omnibridge-idchain",
     "deploy-idchain": "graph deploy idchain-omnibridge-idchain --ipfs http://localhost:5001 --node http://localhost:8020/"
   },
