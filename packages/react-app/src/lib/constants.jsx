@@ -53,13 +53,13 @@ export const defaultTokens = {
     chainId: 74,
   },
   1: {
-    name: 'Stake',
-    address: '0x0Ae055097C6d159879521C384F1D2123D1f195e6',
-    symbol: 'STAKE',
+    name: 'Aragon',
+    address: '0x960b236A07cf122663c4303350609A66A7B288C0',
+    symbol: 'ANT',
     decimals: 18,
     chainId: 1,
     logoURI:
-      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x0Ae055097C6d159879521C384F1D2123D1f195e6/logo.png',
+      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x960b236A07cf122663c4303350609A66A7B288C0/logo.png',
   }
 };
 

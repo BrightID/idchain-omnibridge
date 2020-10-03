@@ -99,7 +99,7 @@ export const getExplorerUrl = chainId => {
 };
 
 export const getMonitorUrl = (chainId, hash) => {
-  const url = 'https://alm-xdai.herokuapp.com/';
+  const url = 'https://idchain-alm.web.app/';
   switch (chainId) {
     case 1:
       return `${url}1/${hash}`;
