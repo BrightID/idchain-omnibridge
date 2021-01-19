@@ -78,5 +78,5 @@ export const ambs = {
 
 export const defaultTokensUrl = {
   74: 'https://raw.githubusercontent.com/IDChain-eth/default-token-list/master/src/tokens/idchain.json',
-  1: 'https://raw.githubusercontent.com/raid-guild/default-token-list/master/src/tokens/mainnet.json',
+  1: 'https://raw.githubusercontent.com/IDChain-eth/default-token-list/master/src/tokens/mainnet.json',
 };
