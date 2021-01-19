@@ -26,7 +26,7 @@ export const networkOptions = [
 
 export const networkNames = {
   74: 'IDChain',
-  1: 'ETH Mainnet'
+  1: 'ETH Mainnet',
 };
 
 export const chainUrls = {
@@ -53,19 +53,17 @@ export const defaultTokens = {
     chainId: 74,
   },
   1: {
-    name: 'Aragon',
-    address: '0x960b236A07cf122663c4303350609A66A7B288C0',
-    symbol: 'ANT',
-    decimals: 18,
+    name: 'Subs',
+    address: '0x61CEAc48136d6782DBD83c09f51E23514D12470a',
+    symbol: 'SUBS',
+    decimals: 0,
     chainId: 1,
-    logoURI:
-      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x960b236A07cf122663c4303350609A66A7B288C0/logo.png',
-  }
+  },
 };
 
 export const graphEndpoints = {
   74: 'https://subgraph.idchain.daohaus.club/subgraphs/name/omnibridge-idchain',
-  1: 'https://api.thegraph.com/subgraphs/name/crisog/idchain-omnibridge'
+  1: 'https://api.thegraph.com/subgraphs/name/crisog/idchain-omnibridge',
 };
 
 export const mediators = {
@@ -79,6 +77,6 @@ export const ambs = {
 };
 
 export const defaultTokensUrl = {
-  74: 'https://raw.githubusercontent.com/1Hive/default-token-list/master/uniswap-xdai.tokenlist.json',
+  74: 'https://raw.githubusercontent.com/IDChain-eth/default-token-list/master/src/tokens/idchain.json',
   1: 'https://raw.githubusercontent.com/raid-guild/default-token-list/master/src/tokens/mainnet.json',
 };
