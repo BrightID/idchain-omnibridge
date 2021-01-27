@@ -19,7 +19,7 @@ export const fetchTokenList = async chainId => {
 
 export const fetchTokensFromRepo = async chainId => {
   const url = getTokenListUrl(chainId);
-  const response = await fetch(url, {mode: 'no-cors'});
+  const response = await fetch(url);
   if (response.ok) {
     const data = await response.json();
     return data;
