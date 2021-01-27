@@ -94,9 +94,10 @@ export const fetchTokenLimits = async (token, account) => {
   let isRegistered = false;
   let balance = 0;
   // ETH/ERC20 Default Limits
-  const isxDai = isxDaiChain(token.chainId);
+  // const isxDai = isxDaiChain(token.chainId);
   let minPerTx = BigNumber.from(10).pow(
-    isxDai ? token.decimals : token.decimals - 3,
+    token.decimals,
+    // isxDai ? token.decimals : token.decimals,
   );
   if (minPerTx.lt(1)) {
     minPerTx = BigNumber.from(1);
