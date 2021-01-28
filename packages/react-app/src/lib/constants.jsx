@@ -46,9 +46,9 @@ export const chainUrls = {
 
 export const defaultTokens = {
   74: {
-    name: 'Wrapped EIDI',
-    address: '0x5B160edBa6119828c5B065804e86111921323f9c',
-    symbol: 'WEIDI',
+    name: 'Dai Stablecoin on IDChain',
+    address: '0xE1A400f340bf4eeDbc4Bbb553f1BFf7Ec4656E3e',
+    symbol: 'DAI',
     decimals: 18,
     chainId: 74,
   },

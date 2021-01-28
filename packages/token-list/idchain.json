@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Dai Stablecoin",
+    "address": "0xE1A400f340bf4eeDbc4Bbb553f1BFf7Ec4656E3e",
+    "symbol": "DAI",
+    "decimals": 18,
+    "chainId": 74,
+    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+  },
+  {
+    "name": "Aragon Network",
+    "address": "0x01e8A98397FBD060daA10feF834534C561744A9e",
+    "symbol": "ANT",
+    "decimals": 18,
+    "chainId": 74,
+    "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x960b236A07cf122663c4303350609A66A7B288C0/logo.png"
+  }
+]
