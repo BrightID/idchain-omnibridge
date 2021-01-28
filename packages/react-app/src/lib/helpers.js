@@ -23,7 +23,7 @@ export const isxDaiChain = chainId => {
     case 1:
       return false;
     case 74:
-      default:
+    default:
       return true;
   }
 };
@@ -99,7 +99,7 @@ export const getExplorerUrl = chainId => {
 };
 
 export const getMonitorUrl = (chainId, hash) => {
-  const url = 'https://idchain-alm.web.app/';
+  const url = 'https://alm.idchain.one/';
   switch (chainId) {
     case 1:
       return `${url}1/${hash}`;
